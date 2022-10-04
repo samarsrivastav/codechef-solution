@@ -4,18 +4,16 @@ using namespace std;
 
 int main()
 {
-    int t,n,i,f;
-    cin>>t;
-    while(t--){
-        f=1;
-        cin>>n;
-        for(i=n;i>=1;i--){
+    int a;
+    cout<<"enter a"<<endl;
+    cin>>a;
+    if(a%2==0){
+        cout<< "a is an even number"<<endl;
 
-            f=f*i;
-
-        }
-        cout<<f<<endl;
     }
+    else{
+        cout<<"a is an odd number"<<endl;
 
+    }
     return 0;
 }
