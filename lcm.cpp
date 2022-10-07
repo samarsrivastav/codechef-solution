@@ -1,21 +1,14 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    int a;
-    int b;
-    int k;
-    cout<<"enter a"<<endl;
+int main(){
+    int a,b;
+    cout<<"Enter the value of a : ";
     cin>>a;
-    cout<<"enter b"<<endl;
+    cout<<"Enter the value of b : ";
     cin >> b;
-    for(k=max(a,b); k<=a*b ; k++){
-        if(k%a==0 && k%b==0){
-            cout<<"LCM of a and b is "  << k <<endl;
-            break;
-        }
-    }
+    int hcf=__gcd(a,b);
+    int lcm=(a*b)/hcf;
+    cout<<"LCM of a and b is "  <<lcm<<endl;
     return 0;
 }
