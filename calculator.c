@@ -21,24 +21,24 @@
 #include <stdio.h>
 int main()
 {
-    int num;
-    printf("enter the nnumbre \n");
-    scanf("%d", &num);
-    // int n=num-1;
-    int fib[num];
-    if (num==1)
-    {
-        fib[0]=0;
+    int num1,num2,fib;
+    printf("Enter the number inwhich you want to perform operation\n");
+    scanf("%d%d",&num1,&num2);
+    char c;
+    printf("Enter the operation which you want to perform operation\n");
+    scanf("%c",&c);
+    if(c=='+'){
+        fib=num1+num2;
     }
-    else if (num==2)
-    {
-        fib[0]=0;
-        fib[1]=1;
+    if(c=='-'){
+        fib=num1-num2;
     }
-    else{
-        fib[num]=num;
+    if(c=='*'){
+        fib=num1*num2;
     }
-
+    if(c=='/'){
+        fib=num1/num2;
+    }
      printf("%d", fib);
 
      return 0;
