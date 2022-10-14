@@ -1,16 +1,14 @@
 #include<iostream>
 using namespace std;
 int main(){
-    // cout<<"number of testcases"<<endl;
-    int testcases{};
-    cin>>testcases;
-    for(int i{1};i<=testcases;i++){
-    // cout<<"enter the number you want to add"<<endl;
-    int num1{},num2{};
-    cin>>num1>>num2;
-    int addition=num1+num2;
-    cout<<addition<<endl;
-    }
+   int t;
+    cin>>t;
+    while(t--){
+        cout<<"Enter the two numbers you want to add\n";
+        int a,b;
+        cin>>a>>b;
+        cout<<"Addition of two numbers\n";
+        cout<<a+b;
     
     return 0;
 }
