@@ -11,12 +11,8 @@ int main()
     int y=0;
 
     cin>>T;
-    for(int i=T ; i>0 ; i--){
+    while(T--){
         cin>>L>>R;
-
-
-
-
 
             for(int k= L ; k<=R ; k++){
                 if(k%10==2 || k%10==3 || k%10==9){
