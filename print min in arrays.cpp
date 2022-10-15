@@ -1,4 +1,5 @@
 #include <iostream>
+#include<algorithm>
 
 using namespace std;
 
@@ -15,13 +16,9 @@ int main()
 
 void  printmin(int arr[5])
 {
-    int min = arr[0];
-        for (int i = 0; i > 5; ++i)
-        {
-            if (min > arr[i])
-            {
-                min = arr[i];
-            }
-        }
+    int min;
+     sort(arr,arr+5);
+     min=arr[4];
+       
         cout<< "Minimum element is: "<< min <<"\n";
 }
