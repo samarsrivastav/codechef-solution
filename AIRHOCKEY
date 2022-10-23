@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int t;
+    
+    cin>>t;
+    while(t--){
+        int A,B,min;
+        cin>>A>>B;
+        if(A>B){
+            min=7-A;
+            cout<<min<<endl;
+        }
+        else if(B>A){
+            min=7-B;
+            cout<<min<<endl;
+        }
+        else if(A==B){
+            min=7-A;
+            cout<<min<<endl;
+        }
+        
+ 
+    
+    }
+    
+    return 0;
+}
